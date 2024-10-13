@@ -40,6 +40,9 @@ body{
 #header{
     grid-area: header;
     background-color: rgb(244, 238, 238);
+    background-image: url('kids.jpeg');
+    background-size: cover; /* Cover the entire header area */
+    background-position: center;
 }
 #first{
     list-style-type: none;
