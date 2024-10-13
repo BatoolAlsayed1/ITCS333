@@ -58,6 +58,7 @@ body{
     background-color: #6C0345;
     border-radius: 10px;
     margin:10px;
+    
 }
 .na a:hover{
     background-color: #F7C566;
@@ -69,7 +70,6 @@ body{
     padding: 15px;
     text-decoration: none;
     color: white;
-    
 }
 
 #contact{
@@ -170,7 +170,7 @@ tbody tr:nth-child(odd){
     margin-top: 20px;
     margin-bottom: 20px;
 }
-a{
+.re a{
     text-decoration: none;
     color:#6C0345;
     margin-left: 20px;
