@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: black;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:20px;
+    color: #DC6B19;
+}
+
+body{
+    background-color: #F7C566;
+    
+    display: grid;
+    padding:0px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap:20px;
+    grid-template-areas: 
+         'header header'
+         'main main'
+         'main main'
+         'main main'
+         'main main'
+         'footer footer'
+    ;
+    max-width: 2400px; /* Set a maximum width for the entire layout */
+    margin: auto; /* Center the layout */
+    font-family: Tahoma;
+    color: black;
+    
+}
+#header{
+    grid-area: header;
+    background-color: rgb(244, 238, 238);
+}
+#first{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    
+}
+.na{
+    display: inline-block;
+    background-color: #6C0345;
+    border-radius: 10px;
+    margin:10px;
+}
+.na a:hover{
+    background-color: #F7C566;
+    border-radius: 10px;
+
+}
+.na a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#contact{
+    grid-area: footer;
+    background-color: rgb(244, 238, 238);
+    text-align: center;
+    font-family: Tahoma;
+}
+#cli{
+    display: inline;
+}
+#cul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color:#6C0345;
+    
+}
+
+#main{
+    grid-area: main;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto ;
+    grid-gap:20px;
+    grid-template-areas: 
+    'm12 m15'
+    'm13 m15'
+    'm21 m15'
+    'm14 m15'
+    ;
+    /*6C0345*/
+}
+
+
+
+#announcements{
+    grid-area: m12;
+    background-color: #FFF8DC;
+    
+}
+#announcements > p {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
