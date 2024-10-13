@@ -150,10 +150,31 @@ table,th,td{
 tbody tr:nth-child(odd){
     background-color: white;
 }
+
 #resources{
     grid-area: m14;
     background-color: #FFF8DC;
     
+}
+.re{
+    display: inline;
+}
+#reul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color:#6C0345;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
