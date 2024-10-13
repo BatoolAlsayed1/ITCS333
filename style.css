@@ -201,3 +201,28 @@ tbody tr:nth-child(odd){
         padding: 10px; /* Less padding */
 }
 }
+#gallery{
+    grid-area: m21;
+    background-color: #FFF8DC; 
+    padding: 20px; 
+    text-align: center;
+}
+.galleryPhoto{
+    display: inline-block;
+    margin: 10px;
+}
+.galleryPhoto img {
+    width: 150px; /* Fixed width */
+    height: 170px; /* Fixed height */
+    border: 10px solid black;
+    border-radius: 4px;
+}
+@media (max-width: 768px) {
+    .galleryPhoto {
+        margin: 5px; /* Reduced margin on smaller screens */
+    }
+
+    #gallery {
+        padding: 10px; /* Less padding */
+}
+}
