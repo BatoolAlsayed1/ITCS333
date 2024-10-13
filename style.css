@@ -123,6 +123,7 @@ a{
     padding-left: 20px;
     padding-bottom: 20px;
 }
+
 #schedule-table{
     grid-area: m13;
     background-color: #FFF8DC;
@@ -148,9 +149,11 @@ tbody tr:nth-child(odd){
 }
 #resources{
     grid-area: m14;
-    background-color:#FFF8DC;
-
+    background-color: #FFF8DC;
+    
 }
+
+
 #teacher-info{
     grid-area: m15;
     background-color: #FFF8DC;
@@ -167,6 +170,16 @@ tbody tr:nth-child(odd){
     padding-bottom: 5px;
     padding-top: 5px;
 }
+@media (max-width: 768px) {
+    .info{
+        margin: 5px; /* Reduced margin on smaller screens */
+    }
+
+    #gallery {
+        padding: 10px; /* Less padding */
+    }
+}
+
 #gallery{
     grid-area: m21;
     background-color: #FFF8DC; 
@@ -189,6 +202,6 @@ tbody tr:nth-child(odd){
     }
 
     #gallery {
-        padding: 10px; /* Less padding */
-}
+        padding: 10px; /* Less padding */
+    }
 }
