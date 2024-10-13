@@ -123,3 +123,31 @@ a{
     padding-left: 20px;
     padding-bottom: 20px;
 }
+#schedule-table{
+    grid-area: m13;
+    background-color: #FFF8DC;
+    
+}
+table{
+    width: 100%;
+}
+th{
+    height: 35px;
+}
+th, td{
+    text-align: center;
+    padding:10px;
+    
+}
+table,th,td{
+    border-bottom:  1px solid black;
+    border-collapse: collapse;
+}
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+#resources{
+    grid-area: m14;
+    background-color:#FFF8DC;
+
+}
