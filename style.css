@@ -167,15 +167,6 @@ tbody tr:nth-child(odd){
     padding-bottom: 5px;
     padding-top: 5px;
 }
-@media (max-width: 768px) {
-    .info{
-        margin: 5px; /* Reduced margin on smaller screens */
-    }
-
-    #gallery {
-        padding: 10px; /* Less padding */
-}
-}
 #gallery{
     grid-area: m21;
     background-color: #FFF8DC; 
