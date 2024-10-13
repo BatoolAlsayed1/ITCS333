@@ -12,12 +12,11 @@ h2{
     text-align: center;
     margin-bottom: 20px;
     margin-top:20px;
-    color: #DC6B19;
+    color: #6C0345;
 }
 
 body{
-    background-color: #F7C566;
-    
+    background-color: Rgba(247, 197, 102,0.5);
     display: grid;
     padding:0px;
     grid-template-columns: 2fr 1fr;
