@@ -176,31 +176,6 @@ tbody tr:nth-child(odd){
         padding: 10px; /* Less padding */
 }
 }
-#teacher-info{
-    grid-area: m15;
-    background-color: #FFF8DC;
-}
-.info{
-    padding: 20px;
-    width: 80%;
-    background-color: white ;
-    margin: 20px auto; /* 20px bottom and top margin, left and right margins centerd in parent container*/
-
-}
-.info > p{
-    padding-left: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-@media (max-width: 768px) {
-    .info{
-        margin: 5px; /* Reduced margin on smaller screens */
-    }
-
-    #teacher-info {
-        padding: 10px; /* Less padding */
-}
-}
 #gallery{
     grid-area: m21;
     background-color: #FFF8DC; 
