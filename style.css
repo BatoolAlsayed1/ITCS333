@@ -16,8 +16,7 @@ h2{
 }
 
 body{
-    background-color: #F7C566;
-    
+    background-color: Rgba(247, 197, 102,0.5);
     display: grid;
     padding:0px;
     grid-template-columns: 2fr 1fr;
