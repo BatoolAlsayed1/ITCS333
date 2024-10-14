@@ -199,7 +199,7 @@ tbody tr:nth-child(odd){
     border: 5px solid black;
     border-radius: 4px;
 }
-@media (max-width: 768px) { /*Designed for diviices with maximum width of 768pixel*/
+@media (max-width: 768px) { /*Designed for diviices with maximum width of 768 pixel*/
     body {
         grid-template-columns: 1fr;/* ensures there is one full-width column*/
         grid-template-rows: auto auto auto;/*sets the rows to adjust based on content size*/
@@ -228,9 +228,7 @@ tbody tr:nth-child(odd){
     .reul {
         display: flex;/*element (resource list layout):*/
         flex-direction: row;/*arranges the items horizontally*/
-        align-items: center; /* centers the items within the row, enhancing the look on smaller screens*/
-
-        
+        align-items: center; /* centers the items within the row, enhancing the look on smaller screens*/   
     }
     #teacher-info .info {
         width: 90%; /* reduces the width of the teacher information section*/
