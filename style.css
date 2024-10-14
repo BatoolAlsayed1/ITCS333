@@ -159,6 +159,9 @@ tbody tr:nth-child(odd){
     text-decoration: none;
     color:black;  
 }
+.re i{
+    padding: 20px;
+}
 #teacher-info{
     grid-area: m15;
     background-color: #FFF8DC;
