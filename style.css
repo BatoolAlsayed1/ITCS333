@@ -19,7 +19,7 @@ body{
     display: grid; /*CSS Grid layout*/
     padding:0px; /*no padding around the body*/
     grid-template-columns: 2fr 1fr; /* two columns*/
-    grid-template-rows: auto auto auto auto auto; /*rows with auto height based on content*/
+    grid-template-rows: auto auto auto auto auto ; /*rows with auto height based on content*/
     grid-gap:20px; /*space between grid items*/
     grid-template-areas: 
          'header header'
@@ -71,7 +71,6 @@ body{
     background-color: rgb(244, 238, 238);
     text-align: center; /*  center text*/
     font-family: Tahoma;
-    
 }
 #cli{
     display: inline; /*inline display */
@@ -160,6 +159,9 @@ tbody tr:nth-child(odd){
     text-decoration: none;
     color:black;  
 }
+.re i{
+    padding: 20px;
+}
 #teacher-info{
     grid-area: m15;
     background-color: #FFF8DC;
@@ -200,6 +202,7 @@ tbody tr:nth-child(odd){
 @media (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
             'header'
             'main'
