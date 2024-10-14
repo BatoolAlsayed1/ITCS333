@@ -124,9 +124,7 @@ a{
 #schedule-table{
     grid-area: m13;
     background-color: #FFF8DC;
-    text-align: center;
-
-    
+    text-align: center;   
 }
 table{
    width: 100%;
