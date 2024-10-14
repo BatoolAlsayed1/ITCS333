@@ -170,7 +170,7 @@ tbody tr:nth-child(odd){
     padding: 20px;
     width: 80%;
     background-color: white ;
-    margin: 20px auto; /* 20px bottom and top, left and right margins centerd in parent container*/
+    margin: 20px auto; /* 20px bottom and top margin, left and right margins centerd in parent container*/
 }
 .info > p{
     padding-left: 5px;
@@ -199,20 +199,19 @@ tbody tr:nth-child(odd){
     border: 5px solid black;
     border-radius: 4px;
 }
-/*ٌResponsive website*/
-@media (max-width: 768px) {
-    body { /*make the website appear in 1 column*/
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            'header'
-            'main'
-            'footer';
+@media (max-width: 768px) { /*Designed for diviices with maximum width of 768pixel*/
+    body {
+        grid-template-columns: 1fr;/* ensures there is one full-width column*/
+        grid-template-rows: auto auto auto;/*sets the rows to adjust based on content size*/
+        grid-template-areas:/*defines the layout for the grid, placing*/
+            'header'/*1*/
+            'main'/*2*/
+            'footer';/*3*/
     }
     #main {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas:
+        grid-template-columns: 1fr;/*The main section is simplified to a single-column layout */
+        grid-template-rows: auto auto auto auto auto;/*ensures each row adjusts based on its content*/
+        grid-template-areas:/*defines how different sections inside the main content will stack*/
             'm12'
             'm13'
             'm21'
@@ -220,27 +219,30 @@ tbody tr:nth-child(odd){
             'm15';
     }
     #gallary{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;/* use a single-column grid,better display on smaller screens*/
     } 
-    #schedule-table th, #schedule-table td {       
-        font-size: 0.8rem;
+    #schedule-table th, #schedule-table td { /*table formating*/
+        
+        font-size: 0.8rem; /*reduces the font size */
     }
     .reul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;   
+        display: flex;/*element (resource list layout):*/
+        flex-direction: row;/*arranges the items horizontally*/
+        align-items: center; /* centers the items within the row, enhancing the look on smaller screens*/
+
+        
     }
     #teacher-info .info {
-        width: 90%;
+        width: 90%; /* reduces the width of the teacher information section*/
     }
 }
-@media (max-width:464px) {
-    #schedule-table th, #schedule-table td{
-   font-size: 0.7rem;
-   padding: 0.3rem;
+@media (max-width:464px) { /* targets screens with a maximum width of 464 pixels, typically smaller devices like smartphones*/
+    #schedule-table th, #schedule-table td{ /*for the weekly table specifically its table headers and data cells*/
+   font-size: 0.7rem; /*Reduces the font size to 0.7rem*/
+   padding: 0.3rem;  /*Decrease the padding within the cells to 0.3rem*/
 }   
-#teacher-info .info {
-    font-size: 0.7rem;
-    padding: 0.3rem;
+#teacher-info .info { /*for teachers information*/
+    font-size: 0.7rem; /*Reduces the font size to 0.7rem*/
+    padding: 0.3rem; /*Decrease the padding within the cells to 0.3rem*/
 }
 }
