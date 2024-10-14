@@ -71,6 +71,7 @@ body{
     background-color: rgb(244, 238, 238);
     text-align: center; /*  center text*/
     font-family: Tahoma;
+    
 }
 #cli{
     display: inline; /*inline display */
@@ -159,9 +160,6 @@ tbody tr:nth-child(odd){
     text-decoration: none;
     color:black;  
 }
-.re i{
-    padding: 20px;
-}
 #teacher-info{
     grid-area: m15;
     background-color: #FFF8DC;
@@ -196,13 +194,12 @@ tbody tr:nth-child(odd){
 .galleryPhoto img {
     width: 150px; /* fixed width */
     height: 170px; /* fixed height */
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 4px;
 }
 @media (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
         grid-template-areas:
             'header'
             'main'
