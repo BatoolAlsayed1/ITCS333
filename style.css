@@ -32,9 +32,7 @@ body{
     max-width: 2400px; /*maximum width for the layout*/
     margin: auto; /* center the layout */
     font-family: Tahoma; /*Tahoma Font*/
-    color: black; /*black color for text*/
-    
-    
+    color: black; /*black color for text*/    
 }
 #header{
     grid-area: header; 
@@ -50,15 +48,13 @@ body{
     padding: 0;
     overflow: hidden; /* hide any overflow elements*/
     width: 100%; /* take entire width of the page */
-    text-align: center; /* center text*/
-    
+    text-align: center; /* center text*/   
 }
 .na{
     display: inline-block; /* elements set to each others*/
     background-color: #6C0345; /* background color*/
     border-radius: 10px; /* round corners*/
-    margin:10px; /* margin between elements*/
-    
+    margin:10px; /* margin between elements*/   
 }
 .na a:hover{
     background-color: #F7C566; 
@@ -92,8 +88,7 @@ body{
 }
 a{
     text-decoration: none; /* remove underline*/
-    color:#6C0345;
-    
+    color:#6C0345;  
 }
 #main{
     grid-area: main;
@@ -112,21 +107,16 @@ a{
 }
 #announcements{
     grid-area: m12;
-    background-color: #FFF8DC;
-    
-    
+    background-color: #FFF8DC;    
 }
 #announcements > div {
     padding-left: 1rem; /* add left padding for announcement direct cildren of <P>*/
-    padding-bottom: 1rem; /*  add bottom padding to seperate paragraphs*/
-    
+    padding-bottom: 1rem; /*  add bottom padding to seperate paragraphs*/   
 }
 #schedule-table{
     grid-area: m13;
     background-color: #FFF8DC;
-    text-align: center;
-
-    
+    text-align: center; 
 }
 table{
    width: 100%;
@@ -167,8 +157,7 @@ tbody tr:nth-child(odd){
 }
 .re a{
     text-decoration: none;
-    color:black;
-   
+    color:black;  
 }
 #teacher-info{
     grid-area: m15;
@@ -225,13 +214,9 @@ tbody tr:nth-child(odd){
             'm14'
             'm15';
     }
-
     #gallary{
         grid-template-columns: 1fr;
-    }
-
-    
-    
+    } 
     #schedule-table th, #schedule-table td {
         
         font-size: 0.8rem;
@@ -247,11 +232,13 @@ tbody tr:nth-child(odd){
         width: 90%;
     }
 }
-
 @media (max-width:464px) {
     #schedule-table th, #schedule-table td{
    font-size: 0.7rem;
    padding: 0.3rem;
+}   
+#teacher-info .info {
+    font-size: 0.7rem;
+    padding: 0.3rem;
 }
-    
 }
