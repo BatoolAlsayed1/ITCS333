@@ -1,26 +1,27 @@
-*{ /*set padding and margin for all elements to 0*/
+*{
     padding: 0;
     margin: 0;
-} 
+}
 h1{
-    text-align: center; /*center h1*/
-    margin-top: 80px; /*add space before h1*/
-    margin-bottom: 25px; /*add space after h1*/
-    color: black; /*h1 color*/
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: black;
 }
 h2{
-    text-align: center; /*center h2*/
-    margin-bottom: 20px; /*add space after h2*/
-    margin-top:20px; /*add space before h2*/
-    color: #6C0345; /*h2 color*/
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:20px;
+    color: #6C0345;
 }
+
 body{
-    background-color: Rgba(247, 197, 102,0.5); /*background color*/
-    display: grid; /*CSS Grid layout*/
-    padding:0px; /*no padding around the body*/
-    grid-template-columns: 2fr 1fr; /* two columns*/
-    grid-template-rows: auto auto auto auto auto; /*rows with auto height based on content*/
-    grid-gap:20px; /*space between grid items*/
+    background-color: Rgba(247, 197, 102,0.5);
+    display: grid;
+    padding:0px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap:20px;
     grid-template-areas: 
          'header header'
          'main main'
@@ -29,71 +30,74 @@ body{
          'main main'
          'footer footer'
     ;
-    max-width: 2400px; /*maximum width for the layout*/
-    margin: auto; /* center the layout */
-    font-family: Tahoma; /*Tahoma Font*/
-    color: black; /*black color for text*/
+    max-width: 2400px; /* Set a maximum width for the entire layout */
+    margin: auto; /* Center the layout */
+    font-family: Tahoma;
+    color: black;
     
 }
 #header{
-    grid-area: header; 
+    grid-area: header;
     background-color: rgb(244, 238, 238);
-    background-image: url('kids.jpeg'); /*Image background*/
-    background-size: cover; /* Image Cover the entire header*/
-    background-position: center; /* Image Cover centered */
-    filter: brightness(70%); /* reduce image brightness*/
+    background-image: url('kids.jpeg');
+    background-size: cover; /* Cover the entire header area */
+    background-position: center;
+    filter: brightness(70%);
 }
 #first{
-    list-style-type: none; /* remove bullet points*/
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* hide any overflow elements*/
-    width: 100%; /* take entire width of the page */
-    text-align: center; /* center text*/
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
     
 }
 .na{
-    display: inline-block; /* elements set to each others*/
-    background-color: #6C0345; /* background color*/
-    border-radius: 10px; /* round corners*/
-    margin:10px; /* margin between elements*/
+    display: inline-block;
+    background-color: #6C0345;
+    border-radius: 10px;
+    margin:10px;
     
 }
 .na a:hover{
-    background-color: #F7C566; 
-    border-radius: 10px; /* round corners*/
+    background-color: #F7C566;
+    border-radius: 10px;
+
 }
 .na a{
-    display: block; /* link as block */
-    padding: 15px; /* padding for the link*/
-    text-decoration: none; /* remove underline*/
+    display: block;
+    padding: 15px;
+    text-decoration: none;
     color: white;
 }
+
 #contact{
     grid-area: footer;
     background-color: rgb(244, 238, 238);
-    text-align: center; /*  center text*/
+    text-align: center;
     font-family: Tahoma;
 }
 #cli{
-    display: inline; /*inline display */
+    display: inline;
 }
 #cul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display:flex; /* flex box to adjust layout*/
-    justify-content: center; /*  center list items*/
+    display:flex;
+    justify-content: center;
     gap: 20px;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 a{
-    text-decoration: none; /* remove underline*/
+    text-decoration: none;
     color:#6C0345;
     
 }
+
 #main{
     grid-area: main;
     display: grid;
@@ -108,41 +112,49 @@ a{
     'm21 m15'
     'm14 m15'
     ;
+    /*6C0345*/
 }
+
+
+
 #announcements{
     grid-area: m12;
     background-color: #FFF8DC;
     
 }
 #announcements > p {
-    padding-left: 20px; /* add left padding for announcement direct cildren of <P>*/
-    padding-bottom: 20px; /*  add bottom padding to seperate paragraphs*/
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
+
 #schedule-table{
     grid-area: m13;
     background-color: #FFF8DC;
     
 }
 table{
-    width: 100%; /* allow table to strech to the width of its container*/
+    width: 100%;
 }
 th{
-    height: 35px; 
+    height: 35px;
 }
 th, td{
     text-align: center;
-    padding:10px;    
+    padding:10px;
+    
 }
 table,th,td{
-    border-bottom:  1px solid black; /* solid blacl border for bottome of cells*/
-    border-collapse: collapse; /* single border */
+    border-bottom:  1px solid black;
+    border-collapse: collapse;
 }
 tbody tr:nth-child(odd){
     background-color: white;
 }
+
 #resources{
     grid-area: m14;
-    background-color: #FFF8DC;  
+    background-color: #FFF8DC;
+    
 }
 .re{
     display: flex;
@@ -158,6 +170,7 @@ tbody tr:nth-child(odd){
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    
 }
 .re a{
     text-decoration: none;
@@ -165,6 +178,13 @@ tbody tr:nth-child(odd){
     margin-left: 20px;
     margin-right: 20px;
 }
+.re i {
+    font-size: 2em; /* Adjust icon size if needed */
+    
+    
+}
+
+
 #teacher-info{
     grid-area: m15;
     background-color: #FFF8DC;
@@ -174,69 +194,45 @@ tbody tr:nth-child(odd){
     width: 80%;
     background-color: white ;
     margin: 20px auto; /* 20px bottom and top margin, left and right margins centerd in parent container*/
+
 }
 .info > p{
     padding-left: 5px;
     padding-bottom: 5px;
     padding-top: 5px;
 }
+@media (max-width: 768px) {
+    .info{
+        margin: 5px; /* Reduced margin on smaller screens */
+    }
+
+    #teacher-info{
+        padding: 10px; /* Less padding */
+    }
+}
+
 #gallery{
     grid-area: m21;
     background-color: #FFF8DC; 
     padding: 20px; 
     text-align: center;
-    display: grid; /* grid display*/
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows: auto;
-    gap: 10px; /* space between images*/
 }
-#gallery h2{
-    grid-column: 1/-1;
-}
-.galleryPhoto {
+.galleryPhoto{
     display: inline-block;
+    margin: 10px;
 }
 .galleryPhoto img {
-    width: 150px; /* fixed width */
-    height: 170px; /* fixed height */
-    border: 10px solid black;
+    width: 150px; /* Fixed width */
+    height: 170px; /* Fixed height */
+    border: 4px solid black;
     border-radius: 4px;
 }
 @media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'header'
-            'main'
-            'footer';
-    }
-    #main {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas:
-            'm12'
-            'm13'
-            'm21'
-            'm14'
-            'm15';
-    }
     .galleryPhoto {
-        width: 90%;
-        height: auto;
+        margin: 5px; /* Reduced margin on smaller screens */
     }
-    #schedule-table table {
-        width: 100%;  
-    }
-    #schedule-table th, #schedule-table td {
-        padding: 10px;
-        font-size: 0.8rem;
-    }
-    .re {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    #teacher-info .info {
-        width: 90%;
+
+    #gallery {
+        padding: 10px; /* Less padding */
     }
 }
