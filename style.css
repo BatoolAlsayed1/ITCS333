@@ -170,7 +170,7 @@ tbody tr:nth-child(odd){
     padding: 20px;
     width: 80%;
     background-color: white ;
-    margin: 20px auto; /* 20px bottom and top margin, left and right margins centerd in parent container*/
+    margin: 20px auto; /* 20px bottom and top, left and right margins centerd in parent container*/
 }
 .info > p{
     padding-left: 5px;
@@ -199,8 +199,9 @@ tbody tr:nth-child(odd){
     border: 5px solid black;
     border-radius: 4px;
 }
+/*ٌResponsive website*/
 @media (max-width: 768px) {
-    body {
+    body { /*make the website appear in 1 column*/
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas:
@@ -221,16 +222,13 @@ tbody tr:nth-child(odd){
     #gallary{
         grid-template-columns: 1fr;
     } 
-    #schedule-table th, #schedule-table td {
-        
+    #schedule-table th, #schedule-table td {       
         font-size: 0.8rem;
     }
     .reul {
         display: flex;
         flex-direction: row;
-        align-items: center;
-
-        
+        align-items: center;   
     }
     #teacher-info .info {
         width: 90%;
