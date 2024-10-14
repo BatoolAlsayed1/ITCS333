@@ -37,6 +37,7 @@ body{
 }
 #header{
     grid-area: header; 
+    background-color: rgb(244, 238, 238);
     background-image: url('kids.jpeg'); /*Image background*/
     background-size: cover; /* Image Cover the entire header*/
     background-position: center; /* Image Cover centered */
