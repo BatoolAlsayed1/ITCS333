@@ -202,6 +202,7 @@ tbody tr:nth-child(odd){
 @media (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
             'header'
             'main'
